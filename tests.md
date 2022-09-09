@@ -1,12 +1,14 @@
-##### Describe: wordCounter()
+##### Describe: arrayBuild
 **Test 1:** 
-*"It should return 1 if a passage contains a single word."*
+*"It should return an empty array if fed an empty string input"*
 
 ***Code:***
 ```javascript
-const text = "hello";
+const text = "";
 wordCounter(text);
 ```
 ***Expected Output:***
-1
-## End Example
+```javascript
+[]
+```
+## End

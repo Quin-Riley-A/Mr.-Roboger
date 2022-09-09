@@ -51,7 +51,7 @@ Alternatively, the project can be opened via cloning/downloading repository:
 3. Unzip the downloaded folder if necessary.
 4. Enter the decompressed folder and open "index.html" in your prefered web browser.
 
-(tk ADD STEPS ABOUT VERIFYING PROJECT IS SET UP CORRECTLY)
+(tk ADD STEPS ABOUT VERIFYING PROJECT IS SET UP CORRECTLY or find other methods from linked exemplar readmes for how to make this section properly detailed)
 ***
 
 ### Example Tests: {#tests}
@@ -68,6 +68,7 @@ The page may experience formatting issues when opened on mobile devices or table
 ***
 
 ### License Information {#license}
+tk double check you like this licensure
 *Quin Asselin, 2022. Available for distribution, modification, inspection, and application under [GPLv3 License](https://www.gnu.org/licenses/gpl-3.0.en.html)*
 
 #### Photo Licensure {#photo}
