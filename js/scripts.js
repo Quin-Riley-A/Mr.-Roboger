@@ -5,9 +5,14 @@
 //Business Logic
 function arrayBuild(userInput){
   let sequenceArr = [];
-  
-  for(let seqPosition = 0; seqPosition<=userInput; seqPosition++) {
-    sequenceArr.push(seqPosition);
+  if (userInput < 0){
+    for(let seqPosition = userInput; seqPosition<=0; seqPosition++) {
+      sequenceArr.push(seqPosition);
+    }
+  } else {
+    for(let seqPosition = 0; seqPosition<=userInput; seqPosition++) {
+      sequenceArr.push(seqPosition);
+    }
   }
   return sequenceArr;
 }
