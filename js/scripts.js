@@ -4,7 +4,9 @@
 
 //Business Logic
 function arrayBuild(userInput){
-  
+  let sequenceArr = [];
+  sequenceArr.push(userInput);
+  return sequenceArr;
 }
 //a function containing a for loop that will generate numbers from [0,n] (inclusive) where n is the user's input
 //each number will be passed to a utility function that checks if i (the most recent int in the current loop iteration) contains the desired digit
