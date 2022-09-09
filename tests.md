@@ -23,5 +23,15 @@ wordCounter(userInput);
 [0,1,2,3]
 ```
 
-
+**Test 3:** 
+*"It should return an array of elements from userInput(a negative integer) zero. The length of the array should be one more than the absolute value of userInput"*
+***Code:***
+```javascript
+const userInput = -3;
+wordCounter(userInput);
+```
+***Expected Output:***
+```javascript
+[-3,-2,-1,0]
+```
 ## End
