@@ -15,15 +15,18 @@
     <p>Please select an integer as your input. When you submit the form, a sequence of outputs scaled with your particular input will appear below</p>
   </div>
   <div class="row">
-    <div class="col-sm-6">
+    <div class="col-md-6">
       <form>
         <h5>Please select your desired input number to generate a sequence.</h5>
         <div class="form-check">
-          <input class="form-check-input" type="text" name="chosen-number" id="user-number" value="">
-          <label for="user-number"> Enter an integer value of your choosing.</label> 
+          <label for="user-number">
+          <input class="form-check-input" type="text" name="chosen-number" id="user-number" placeholder="Please enter integer." value="">
+          </label> 
         </div>
       </form>
     </div>
+  </div>
+  <div class="row" id="results">
   </div>
 </body>
 </html>
