@@ -5,6 +5,10 @@
 //Business Logic
 function arrayBuild(userInput){
   let sequenceArr = [];
+  let seqPosition = 0
+  for (seqPosition; seqPosition<=userInput; seqPosition++;) {
+    
+  }
   sequenceArr.push(userInput);
   return sequenceArr;
 }
