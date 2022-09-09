@@ -3,6 +3,9 @@
 //function will check if i contains the digit 3/2/1 and return true or false
 
 //Business Logic
+function arrayBuild(userInput){
+  
+}
 //a function containing a for loop that will generate numbers from [0,n] (inclusive) where n is the user's input
 //each number will be passed to a utility function that checks if i (the most recent int in the current loop iteration) contains the desired digit
 //this function will be written once and passed to up to three times in an if-ie-else branching sequence starting it will check if 3 is in i, then 2, then 1
