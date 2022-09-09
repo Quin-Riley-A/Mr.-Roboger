@@ -5,11 +5,9 @@
 //Business Logic
 function arrayBuild(userInput){
   let sequenceArr = [];
-  let seqPosition = 0
-  for (seqPosition; seqPosition<=userInput; seqPosition++;) {
-    
+  for(let seqPosition = 0; seqPosition<=userInput; seqPosition++) {
+    sequenceArr.push(seqPosition);
   }
-  sequenceArr.push(userInput);
   return sequenceArr;
 }
 //a function containing a for loop that will generate numbers from [0,n] (inclusive) where n is the user's input
