@@ -6,11 +6,23 @@
 function arrayBuild(userInput){
   let sequenceArr = [];
   if (userInput < 0){
-    for(let seqPosition = userInput; seqPosition<=0; seqPosition++) {
+    for(let seqPosition = userInput; seqPosition <= 0; seqPosition++) {
+      let index = 1;
+      //this nested loop is supposed to check if each number contains one of the digits 3 2 or 1 and if so add string and then increment to the next number
+      for(let seqStr = seqPosition.toString(); index < seqStr.length; index++) {
+        if (["1", "2", "3"].includes(seqStr[index])){
+          sequenceArr.push("str");
+          break;
+        }
+      }
+      //meant to check if in the nested while loop you've found a target number and added a string "str"
+      if (typeof (sequenceArr[sequenceArr.length-1]) === "string") {
+        continue;
+      }
       sequenceArr.push(seqPosition);
     }
   } else {
-    for(let seqPosition = 0; seqPosition<=userInput; seqPosition++) {
+    for(let seqPosition = 0; seqPosition <= userInput; seqPosition++) {
       sequenceArr.push(seqPosition);
     }
   }

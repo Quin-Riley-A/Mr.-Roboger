@@ -34,4 +34,16 @@ wordCounter(userInput);
 ```javascript
 [-3,-2,-1,0]
 ```
+
+**Test 4:** 
+*"It should return an array as described by Test 2 or Test 3 depending on sign of input. For numbers containing the digit(s) 1, 2, or 3 that number should be replaced with a string"*
+***Code:***
+```javascript
+const userInput = -4;
+wordCounter(userInput);
+```
+***Expected Output:***
+```javascript
+[-4, "str", "str", "str", 0]
+```
 ## End
