@@ -1,6 +1,19 @@
 //Utility Logic
-//function will accept the integer i and a 3, 2, or 1
-//function will check if i contains the digit 3/2/1 and return true or false
+function digitChecker(sequenceArr, seqPosition, seqStrArr) {
+  if (seqStrArr.includes("3")){
+    sequenceArr.push("Won't you be my neighbor?");
+  } 
+  else if (seqStrArr.includes("2")) {
+    sequenceArr.push("Boop!");
+  }
+  else if (seqStrArr.includes("1")) {
+    sequenceArr.push("Beep!");
+  }
+  else {
+    sequenceArr.push(seqPosition);
+  }
+  return sequenceArr;
+}
 
 //Business Logic
 function arrayBuild(userInput){
@@ -9,43 +22,21 @@ function arrayBuild(userInput){
   if (userInput < 0){
     //start at user's number and work up by 1. Brek when the int is 1
     for (let seqPosition = userInput; seqPosition <= 0; seqPosition++) {
+      let seqStrArr = seqPosition.toString().split("");
       //move to Utility functions[1]
-      let seqStrArr = (seqPosition.toString()).split("");
-      if (seqStrArr.includes("3")){
-        sequenceArr.push("Won't you be my neighbor?");
-      } 
-      else if (seqStrArr.includes("2")) {
-        sequenceArr.push("Boop!");
-      }
-      else if (seqStrArr.includes("1")) {
-        sequenceArr.push("Beep!");
-      }
-      else {
-        sequenceArr.push(seqPosition);
-      }
+      sequenceArr = digitChecker(sequenceArr, seqPosition, seqStrArr);
     }
   }
   else if (userInput >=0) {
     for (let seqPosition = 0; seqPosition <= userInput; seqPosition++) {
       //move to Utility functions[1]
-      let seqStrArr = (seqPosition.toString()).split("");
-      if (seqStrArr.includes("3")){
-        sequenceArr.push("Won't you be my neighbor?");
-      } 
-      else if (seqStrArr.includes("2")) {
-        sequenceArr.push("Boop!");
-      }
-      else if (seqStrArr.includes("1")) {
-        sequenceArr.push("Beep!");
-      }
-      else {
-        sequenceArr.push(seqPosition);
-      }
+      let seqStrArr = seqPosition.toString().split("");
+      //move to Utility functions[1]
+      sequenceArr = digitChecker(sequenceArr, seqPosition, seqStrArr);
     }
   }
   return sequenceArr;
 }
-
 
 //UI Logic
 //a function that will pull user input from a forn and insert it into a variable
