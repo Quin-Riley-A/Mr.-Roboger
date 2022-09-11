@@ -38,7 +38,7 @@ This project was built in tandem with a programming class taught by Epicodus. It
 This webpage can be access by following the Github Pages linked [above](#pages)
 
 Alternatively, the project can be opened via cloning/downloading repository:
-1. Download this repository from its Github Repository.
+1. Download this repository from its Github Repository located [here.]()
 2. Locate the download destination folder on your local machine.
 3. Unzip the downloaded folder if necessary.
 4. Enter the decompressed folder and open "index.html" in your prefered web browser.
@@ -55,16 +55,10 @@ The complete sequence of business logic tests can be found [here](/tests.md).
 ***
 
 ### Known Bugs: {#bugs}
-tk edit this section for what is needed particularly
-In the event that (disallowed values) are entered into [MORE INFO] If you experience this issue, please message the producer of your current repository and include any relevant form/page information. Thank you for your patience as I work on any issues!
+This function has not been refactored for time efficiency scaling optimally with input size. As such, if a significantly large digit is selected to generate a sequence the end user will notice hangtime. In the event of a sufficiently large number the browser tab may run out of memory during the process of building the array. Thank you for your patience as future refactors may hopefully be capable for addressing this issue to a degree.
 
-The page may experience formatting issues when opened on mobile devices or tablets/laptops in smaller windows. Page should still be legible but general project layout will shift in potentially unforeseen manner. Thus, it is recommended to open the HTML index page in browser or file explorer in as full a screen as hardware allows.
+If you experience this issue, please message the producer of your current repository and include any relevant form/page information. Thank you for your patience as I work on any issues!
 ***
 
 ### License Information {#license}
-tk double check you like this licensure
 *Quin Asselin, 2022. Available for distribution, modification, inspection, and application under [GPLv3 License](https://www.gnu.org/licenses/gpl-3.0.en.html)*
-
-#### Photo Licensure {#photo}
-tk verify you're using photos with acceptable licensure and add citations here
-*All photos are used with permission from their respective owners.*
