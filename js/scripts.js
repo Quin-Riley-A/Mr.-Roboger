@@ -12,13 +12,13 @@ function arrayBuild(userInput){
       //move to Utility functions[1]
       let seqStrArr = (seqPosition.toString()).split("");
       if (seqStrArr.includes("3")){
-        sequenceArr.push("str");
+        sequenceArr.push("Won't you be my neighbor?");
       } 
       else if (seqStrArr.includes("2")) {
-        sequenceArr.push("str");
+        sequenceArr.push("Boop!");
       }
       else if (seqStrArr.includes("1")) {
-        sequenceArr.push("str");
+        sequenceArr.push("Beep!");
       }
       else {
         sequenceArr.push(seqPosition);
@@ -30,13 +30,13 @@ function arrayBuild(userInput){
       //move to Utility functions[1]
       let seqStrArr = (seqPosition.toString()).split("");
       if (seqStrArr.includes("3")){
-        sequenceArr.push("str");
+        sequenceArr.push("Won't you be my neighbor?");
       } 
       else if (seqStrArr.includes("2")) {
-        sequenceArr.push("str");
+        sequenceArr.push("Boop!");
       }
       else if (seqStrArr.includes("1")) {
-        sequenceArr.push("str");
+        sequenceArr.push("Beep!");
       }
       else {
         sequenceArr.push(seqPosition);
