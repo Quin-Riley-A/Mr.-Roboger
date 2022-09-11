@@ -44,12 +44,17 @@ function inputCheck(event) {
     let pElement = document.createElement("p");
     let span = document.createElement("span.zany");
     span.append("The sequence generated from your input is as follows: ");
-    resultArr.forEach(element => {
-      span.append(element + ", ");
-    });
-    pElement.append(span);
-    div.append(pElement);
-    console.log("This is the result in the input check function: " + resultArr);
+    for (let index = 0; index < resultArr.length; index++) {
+      if (index < resultArr.length-1) {
+        span.append(resultArr[index] + ", ");
+      }
+      else {
+        span.append(resultArr[index]);
+      }
+      pElement.append(span);
+      div.append(pElement);
+    }
+      console.log("This is the result in the input check function: " + resultArr);
   }
   else {
     console.log("Please provide the specified value for the input.");
