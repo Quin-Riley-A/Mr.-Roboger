@@ -37,17 +37,18 @@ function arrayBuild(userInput) {
 //should take the input from user and find the if it is parseable to an integer.
 function inputCheck(event) {
   event.preventDefault();
-  let input = document.getElementById("user-number").value;
+  let inputNum = document.getElementById("user-number").value;
+  let inputName = document.getElementById("user-name").value;
   let div = document.getElementById("results");
   let pElement = document.getElementById("results-text");
   if (pElement !== null) {
     div.removeChild(pElement);
     }
-  if (typeof parseInt(input) === "number" && !isNaN(input)) {
-    let resultArr  = arrayBuild(input);
+  if (typeof parseInt(inputNum) === "number" && !isNaN(inputNum)) {
+    let resultArr  = arrayBuild(inputNum);
     let pElement = document.createElement("p");
     pElement.id = "results-text";
-    let span = document.createElement("span.zany");
+    let span = document.createElement("span");
     span.append("The sequence generated from your input is as follows: ");
     for (let index = 0; index < resultArr.length; index++) {
       if (index < resultArr.length-1) {

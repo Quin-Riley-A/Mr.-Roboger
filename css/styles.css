@@ -1,12 +1,8 @@
-span.zany {
-  font-weight: bolder;
-}
-
 body {
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: rgb(224, 238, 250);
-  float: left;
+  /* float: left; */
   color: blue;
 }
 
@@ -24,9 +20,11 @@ label {
 div#results {
   float: none;
   margin: 10px;
-  width: 85%;
-  border: dashed lightgreen;
-  padding: 20px;
+  border: dashed 3px lightgreen;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+
 }
 
 .error {
