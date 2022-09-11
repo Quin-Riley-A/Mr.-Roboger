@@ -37,8 +37,11 @@ function arrayBuild(userInput) {
 //should take the input from user and find the if it is parseable to an integer.
 function inputCheck(event) {
   event.preventDefault();
-  let input = document.getElementById("user-number");
-  console.log(input.value);
+  let input = parseInt(document.getElementById("user-number").value);
+  if (typeof input === "number" && !isNaN(input)) {
+    let resultArr  = arrayBuild(input);
+    console.log("This is the result in the input check function: " + resultArr.split(" "));
+  }
 }
 
 function formFinder(){
