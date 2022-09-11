@@ -44,11 +44,11 @@ function inputCheck(event) {
     div.removeChild(pElement);
     }
   if (typeof parseInt(inputNum) === "number" && !isNaN(inputNum)) {
-    let resultArr  = arrayBuild(inputNum, inputName);
     let pElement = document.createElement("p");
     pElement.id = "results-text";
     let span = document.createElement("span");
     span.append("The sequence generated from your input is as follows: ");
+    let resultArr  = arrayBuild(inputNum, inputName);
     for (let index = 0; index < resultArr.length; index++) {
       if (index < resultArr.length-1) {
         span.append(resultArr[index] + ", ");
@@ -59,7 +59,6 @@ function inputCheck(event) {
       pElement.append(span);
       div.append(pElement);
     }
-      console.log("This is the result in the input check function: " + resultArr);
   }
   else {
     let pElement = document.createElement("p");
