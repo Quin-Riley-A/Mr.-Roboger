@@ -10,6 +10,10 @@ body {
   color: blue;
 }
 
+.form-check {
+  text-align: left;
+}
+
 .error {
   color: red;
 }

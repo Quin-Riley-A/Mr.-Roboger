@@ -37,13 +37,13 @@ function arrayBuild(userInput) {
 //should take the input from user and find the if it is parseable to an integer.
 function inputCheck(event) {
   event.preventDefault();
-  let input = parseInt(document.getElementById("user-number").value);
+  let input = document.getElementById("user-number").value;
   let div = document.getElementById("results");
   let pElement = document.getElementById("results-text");
   if (pElement !== null) {
     div.removeChild(pElement);
     }
-  if (typeof input === "number" && !isNaN(input)) {
+  if (typeof parseInt(input) === "number" && !isNaN(input)) {
     let resultArr  = arrayBuild(input);
     let pElement = document.createElement("p");
     pElement.id = "results-text";
