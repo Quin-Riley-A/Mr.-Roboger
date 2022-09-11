@@ -39,9 +39,17 @@ function inputCheck(event) {
   event.preventDefault();
   let input = parseInt(document.getElementById("user-number").value);
   let div = document.getElementById("results");
+  
+  if (div.hasChildNodes) {
+    let pElement = document.getElementById("results-text");
+    if (pElement !== null) {
+    div.removeChild(pElement);
+    }
+  }
   if (typeof input === "number" && !isNaN(input)) {
     let resultArr  = arrayBuild(input);
     let pElement = document.createElement("p");
+    pElement.id = "results-text";
     let span = document.createElement("span.zany");
     span.append("The sequence generated from your input is as follows: ");
     for (let index = 0; index < resultArr.length; index++) {
