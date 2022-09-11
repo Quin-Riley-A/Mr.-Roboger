@@ -39,13 +39,10 @@ function inputCheck(event) {
   event.preventDefault();
   let input = parseInt(document.getElementById("user-number").value);
   let div = document.getElementById("results");
-  
-  if (div.hasChildNodes) {
-    let pElement = document.getElementById("results-text");
-    if (pElement !== null) {
+  let pElement = document.getElementById("results-text");
+  if (pElement !== null) {
     div.removeChild(pElement);
     }
-  }
   if (typeof input === "number" && !isNaN(input)) {
     let resultArr  = arrayBuild(input);
     let pElement = document.createElement("p");
@@ -70,6 +67,7 @@ function inputCheck(event) {
     p 
   }
 }
+
 
 function formFinder(){
   let form = document.querySelector("form");
