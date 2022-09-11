@@ -34,7 +34,6 @@ function arrayBuild(userInput, userName) {
 }
 
 //UI Logic
-//should take the input from user and find the if it is parseable to an integer.
 function inputCheck(event) {
   event.preventDefault();
   let inputNum = document.getElementById("user-number").value;
@@ -73,16 +72,9 @@ function inputCheck(event) {
   }
 }
 
-
 function formFinder(){
   let form = document.querySelector("form");
   form.addEventListener("submit", inputCheck)
 }
 
 window.addEventListener("load", formFinder);
-
-//initial event listener containing onload that waits for the form and page to load
-  //within this, a listener attached to the form (defined as the form variable) exists within a loop
-  //passes the users input to a utility function that checks if the input is infact an integer. if its not parseable the user will be reprompted.
-  //as a bonus, if there is time, when the number is a floating point the form will prompt with an additional question asking if the user wants to round up or down to the nearest int
-  //important to note that based on the way I have described this, the end product should function for negative inputs, allowing the user to give a negative number as a starting point and the sequence should work from their input up to zero.
