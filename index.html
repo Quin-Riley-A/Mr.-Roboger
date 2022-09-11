@@ -12,22 +12,27 @@
     <h1>Welcome to Mr. Roboger's Neighborhood!</h1>
     <p>Please select an integer as your input. When you submit the form, a sequence of outputs scaled with your particular input will appear below</p>
   </div>
-  <div class="row">
-    <div class="col-md-6">
-      <form>
-        <h5>Please select your desired input number to generate a sequence.</h5>
-        <div class="form-check">
-          <label for="user-number">
-          <input class="form-check-input" type="text" name="chosen-number" id="user-number" placeholder="Please enter integer." value="">
-          </label>
-        </div>
-        <br>
-        <button type="submit" class="btn btn-primary">Submit to See Results</button>
-      </form>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <form>
+          <h5>Please select your desired input number to generate a sequence.</h5>
+          <div class="form-check">
+            <label for="user-number">
+              <input class="form-check-input" type="text" name="chosen-number" id="user-number" placeholder="Please enter integer." value="">
+            </label>
+            <label for="user-name">
+              <input class="form-check-input" type="text" name="chosen-name" id="user-name" placeholder="(Optional) Please enter a name." value="default">
+            </label>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-primary">Submit to See Results</button>
+        </form>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6" id="results">
+    <div class="row">
+      <div class="col-lg-12" id="results">
+      </div>
     </div>
   </div>
 </body>
