@@ -5,28 +5,46 @@
 //Business Logic
 function arrayBuild(userInput){
   let sequenceArr = [];
+  //user selects negative number
   if (userInput < 0){
+    //start at user's number and work up by 1. Brek when the int is 1
     for(let seqPosition = userInput; seqPosition <= 0; seqPosition++) {
-      let index = 1;
+      let seqStrArr = (seqPosition.toString()).split("");
+      if (seqStrArr.includes("3")){
+        sequenceArr.push("Won't you be my neighbour?");
+      } 
+      else if (seqStrArr.includes("2")) {
+        sequenceArr.push("Boop");
+      }
+      else if (seqStrArr.includes("1")) {
+        sequenceArr.push("Beep");
+      }
+      else {
+        sequenceArr.push(seqPosition);
+      }
+//      let index = 0;
       //this nested loop is supposed to check if each number contains one of the digits 3 2 or 1 and if so add string and then increment to the next number
-      for(let seqStr = seqPosition.toString(); index < seqStr.length; index++) {
-        if (["1", "2", "3"].includes(seqStr[index])){
-          sequenceArr.push("str");
-          break;
-        }
+//      for(let seqStr = seqPosition.toString(); index < seqStr.length; index++) {
+        // if ((seqStr.split("")).includes("3")){
+        //   sequenceArr.push("str");
+        //   break;
+        // } else {
+        //   sequenceArr.push(seqPosition);
+        // }
       }
       //meant to check if in the nested while loop you've found a target number and added a string "str"
-      if (typeof (sequenceArr[sequenceArr.length-1]) === "string") {
-        continue;
-      }
-      sequenceArr.push(seqPosition);
-    }
-  } else {
-    for(let seqPosition = 0; seqPosition <= userInput; seqPosition++) {
-      sequenceArr.push(seqPosition);
-    }
-  }
+//      if (typeof (sequenceArr[sequenceArr.length-1]) === "string") {
+// //        continue;
+//       }
+//       sequenceArr.push(seqPosition);
+  //   }
+  // } else {
+  //   for(let seqPosition = 0; seqPosition <= userInput; seqPosition++) {
+  //     sequenceArr.push(seqPosition);
+  //   }
+  // }
   return sequenceArr;
+}
 }
 //a function containing a for loop that will generate numbers from [0,n] (inclusive) where n is the user's input
 //each number will be passed to a utility function that checks if i (the most recent int in the current loop iteration) contains the desired digit
