@@ -42,8 +42,6 @@ Alternatively, the project can be opened via cloning/downloading repository:
 2. Locate the download destination folder on your local machine.
 3. Unzip the downloaded folder if necessary.
 4. Enter the decompressed folder and open "index.html" in your prefered web browser.
-
-(tk ADD STEPS ABOUT VERIFYING PROJECT IS SET UP CORRECTLY or find other methods from linked exemplar readmes for how to make this section properly detailed)
 ***
 
 ### Example Tests: {#tests}
