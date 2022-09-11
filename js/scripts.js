@@ -1,7 +1,7 @@
 //Utility Logic
-function digitChecker(sequenceArr, seqPosition, seqStrArr) {
+function digitChecker(sequenceArr, seqPosition, seqStrArr, userName) {
   if (seqStrArr.includes("3")) {
-    sequenceArr.push("Won't you be my neighbor?");
+    sequenceArr.push("Won't you be my neighbor " + userName + "?");
   } 
   else if (seqStrArr.includes("2")) {
     sequenceArr.push("Boop!");
@@ -16,18 +16,18 @@ function digitChecker(sequenceArr, seqPosition, seqStrArr) {
 }
 
 //Business Logic
-function arrayBuild(userInput) {
+function arrayBuild(userInput, userName) {
   let sequenceArr = [];
   if (userInput < 0) {
     for (let seqPosition = userInput; seqPosition <= 0; seqPosition++) {
       let seqStrArr = seqPosition.toString().split("");
-      sequenceArr = digitChecker(sequenceArr, seqPosition, seqStrArr);
+      sequenceArr = digitChecker(sequenceArr, seqPosition, seqStrArr, userName);
     }
   }
   else if (userInput >=0) {
     for (let seqPosition = 0; seqPosition <= userInput; seqPosition++) {
       let seqStrArr = seqPosition.toString().split("");
-      sequenceArr = digitChecker(sequenceArr, seqPosition, seqStrArr);
+      sequenceArr = digitChecker(sequenceArr, seqPosition, seqStrArr, userName);
     }
   }
   return sequenceArr;
@@ -45,7 +45,7 @@ function inputCheck(event) {
     div.removeChild(pElement);
     }
   if (typeof parseInt(inputNum) === "number" && !isNaN(inputNum)) {
-    let resultArr  = arrayBuild(inputNum);
+    let resultArr  = arrayBuild(inputNum, inputName);
     let pElement = document.createElement("p");
     pElement.id = "results-text";
     let span = document.createElement("span");
