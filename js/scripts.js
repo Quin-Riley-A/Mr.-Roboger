@@ -43,7 +43,7 @@ function inputCheck(event) {
   if (pElement !== null) {
     div.removeChild(pElement);
     }
-  if (typeof parseInt(inputNum) === "number" && !isNaN(inputNum)) {
+  if (typeof parseInt(inputNum) === "number" && !isNaN(inputNum) && inputNum !=="") {
     let pElement = document.createElement("p");
     pElement.id = "results-text";
     let span = document.createElement("span");
