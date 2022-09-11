@@ -16,7 +16,7 @@ Quin Asselin, (2022)
 
 *** 
 
-### Repository Description: {#description}
+### Repository Description:{#description}
 This application requests the user input an integer. This input will be used to generate a sequence of numbers in which the integers containing certain numerals (1, 2, and 3) will have their values replaced with strings pretaining to a certain neighborly sweater-wearing automaton.
 
 This project was built in tandem with a programming class taught by Epicodus. It contains use of JavaScript, HTML and formatting from both custom CSS and Bootstrap. 
