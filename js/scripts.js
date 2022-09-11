@@ -1,6 +1,6 @@
 //Utility Logic
 function digitChecker(sequenceArr, seqPosition, seqStrArr) {
-  if (seqStrArr.includes("3")){
+  if (seqStrArr.includes("3")) {
     sequenceArr.push("Won't you be my neighbor?");
   } 
   else if (seqStrArr.includes("2")) {
@@ -16,22 +16,17 @@ function digitChecker(sequenceArr, seqPosition, seqStrArr) {
 }
 
 //Business Logic
-function arrayBuild(userInput){
+function arrayBuild(userInput) {
   let sequenceArr = [];
-  //user selects negative number
-  if (userInput < 0){
-    //start at user's number and work up by 1. Brek when the int is 1
+  if (userInput < 0) {
     for (let seqPosition = userInput; seqPosition <= 0; seqPosition++) {
       let seqStrArr = seqPosition.toString().split("");
-      //move to Utility functions[1]
       sequenceArr = digitChecker(sequenceArr, seqPosition, seqStrArr);
     }
   }
   else if (userInput >=0) {
     for (let seqPosition = 0; seqPosition <= userInput; seqPosition++) {
-      //move to Utility functions[1]
       let seqStrArr = seqPosition.toString().split("");
-      //move to Utility functions[1]
       sequenceArr = digitChecker(sequenceArr, seqPosition, seqStrArr);
     }
   }
