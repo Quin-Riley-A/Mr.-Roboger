@@ -49,6 +49,10 @@ function inputCheck(event) {
     let span = document.createElement("span");
     span.append("The sequence generated from your input is as follows: ");
     let resultArr  = arrayBuild(inputNum, inputName);
+    let reverseChoice = parseInt((document.querySelector("input[name='radioQuestion']:checked").value).charAt(6));
+    if (reverseChoice) {
+      resultArr.reverse();
+    }
     for (let index = 0; index < resultArr.length; index++) {
       if (index < resultArr.length-1) {
         span.append(resultArr[index] + ", ");

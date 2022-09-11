@@ -17,6 +17,10 @@ label {
   float: none;
 }
 
+.radio {
+  color: black;
+}
+
 div#results {
   float: none;
   margin: 10px;

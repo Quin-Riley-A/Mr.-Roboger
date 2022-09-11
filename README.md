@@ -1,19 +1,18 @@
 # Mr. Roboger's Neighborhood
 
 ## Authored by: 
-Quin Asselin, (2022
+Quin Asselin, (2022)
 
 ***
 
 ## Table of Contents
 1. [Repository Description](#description)
-2. [Github Pages Information](#pages)
-3. [Technologies Used](#tech)
-4. [Setup Instructions](#setup)
-5. [Example Tests](#tests)
-6. [Known Bugs](#bugs)
-7. [License Information](#license)
-8. [Photo Licensure](#photo)
+2. [Technologies Used](#tech)
+3. [Setup Instructions](#setup)
+4. [Example Tests](#tests)
+5. [Known Bugs](#bugs)
+6. [License Information](#license)
+7. [Photo Licensure](#photo)
 
 *** 
 
@@ -24,13 +23,6 @@ This project was built in tandem with a programming class taught by Epicodus. It
 
 ***
 
-(tk)
-### Github Pages: {#pages}
-This project can be accessed on Github Pages via this [link](INSERT LINK HERE)
-
-
-***
-
 ### Technologies Used: {#tech}
 - Javascript
 - HTML5
@@ -38,7 +30,7 @@ This project can be accessed on Github Pages via this [link](INSERT LINK HERE)
 - Markdown Text
 - Bootstrap 4.6.2
 - Git
-- Github (tk and Github Pages)
+- Github
 
 ***
 
@@ -58,6 +50,8 @@ Alternatively, the project can be opened via cloning/downloading repository:
 Testing information including TDD for functions of business logic can be found in tests.md within this directory. Tests are written in plain English and run manually rather than employing automated testing technologies.
 
 Tests are organized by function and range from expected complexity of implementation (least to most).
+
+The complete sequence of business logic tests can be found [here](/tests.md).
 ***
 
 ### Known Bugs: {#bugs}
