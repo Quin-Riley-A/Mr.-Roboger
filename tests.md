@@ -4,7 +4,7 @@
 ***Code:***
 ```javascript
 const userInput = 0;
-wordCounter(userInput);
+arrayBuild(userInput);
 ```
 ***Expected Output:***
 ```javascript
@@ -16,7 +16,7 @@ wordCounter(userInput);
 ***Code:***
 ```javascript
 const userInput = 3;
-wordCounter(userInput);
+arrayBuild(userInput);
 ```
 ***Expected Output:***
 ```javascript
@@ -28,7 +28,7 @@ wordCounter(userInput);
 ***Code:***
 ```javascript
 const userInput = -3;
-wordCounter(userInput);
+arrayBuild(userInput);
 ```
 ***Expected Output:***
 ```javascript
@@ -40,10 +40,37 @@ wordCounter(userInput);
 ***Code:***
 ```javascript
 const userInput = -4;
-wordCounter(userInput);
+arrayBuild(userInput);
 ```
 ***Expected Output:***
 ```javascript
 [-4, "str", "str", "str", 0]
 ```
+
+**Test 5**
+*"It should return an array where each string varies based on present digits."*
+***Code:***
+```javascript
+const userInput = -4;
+arrayBuild(userInput);
+```
+***Expected Output:***
+```javascript
+[-4, "Won't you be my neighbor?", "Boop!", "Beep!", 0]
+```  
+
+**Test 6**
+*"It should return an array where strings change based on present digits. When a number in the sequence would contain a 3, it asks "Won't you be my neighbor [name]?" and includes a name specified by via input.
+***Code: ***
+```javascript
+const userNum = -4
+const userName = "Fleabrou"
+arrayBuild(userNum, userName);
+```
+***Expected Output:***
+```javascript
+[-4, "Won't you be my neighbor, Fleabrou?", "Boop!", "Beep!", 0]
+```
+
+
 ## End
