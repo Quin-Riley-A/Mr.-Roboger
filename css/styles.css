@@ -1,3 +1,15 @@
 span.zany {
   font-weight: bolder;
 }
+
+body {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: rgb(224, 238, 250);
+  float: left;
+  color: blue;
+}
+
+.error {
+  color: red;
+}

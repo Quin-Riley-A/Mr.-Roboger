@@ -62,9 +62,13 @@ function inputCheck(event) {
       console.log("This is the result in the input check function: " + resultArr);
   }
   else {
-    console.log("Please provide the specified value for the input.");
-    const pElement = document.createElement("p");
-    p 
+    let pElement = document.createElement("p");
+    pElement.id = "results-text";
+    let span = document.createElement("span");
+    span.className = "error";
+    span.append("Your input appears to not be an acceptable integer input. Please try putting in a non-decimal number for a result displaying a sequence.");
+    pElement.append(span);
+    div.append(pElement);
   }
 }
 
