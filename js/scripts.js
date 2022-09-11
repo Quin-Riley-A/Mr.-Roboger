@@ -34,7 +34,19 @@ function arrayBuild(userInput) {
 }
 
 //UI Logic
-//a function that will pull user input from a forn and insert it into a variable
+//should take the input from user and find the if it is parseable to an integer.
+function inputCheck(event) {
+  event.preventDefault();
+  let input = document.getElementById("user-number");
+  console.log(input.value);
+}
+
+function formFinder(){
+  let form = document.querySelector("form");
+  form.addEventListener("submit", inputCheck)
+}
+
+window.addEventListener("load", formFinder);
 
 //initial event listener containing onload that waits for the form and page to load
   //within this, a listener attached to the form (defined as the form variable) exists within a loop
