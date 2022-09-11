@@ -38,9 +38,23 @@ function arrayBuild(userInput) {
 function inputCheck(event) {
   event.preventDefault();
   let input = parseInt(document.getElementById("user-number").value);
+  let div = document.getElementById("results");
   if (typeof input === "number" && !isNaN(input)) {
     let resultArr  = arrayBuild(input);
-    console.log("This is the result in the input check function: " + resultArr.split(" "));
+    let pElement = document.createElement("p");
+    let span = document.createElement("span.zany");
+    span.append("The sequence generated from your input is as follows: ");
+    resultArr.forEach(element => {
+      span.append(element + ", ");
+    });
+    pElement.append(span);
+    div.append(pElement);
+    console.log("This is the result in the input check function: " + resultArr);
+  }
+  else {
+    console.log("Please provide the specified value for the input.");
+    const pElement = document.createElement("p");
+    p 
   }
 }
 
