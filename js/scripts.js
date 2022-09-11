@@ -8,50 +8,44 @@ function arrayBuild(userInput){
   //user selects negative number
   if (userInput < 0){
     //start at user's number and work up by 1. Brek when the int is 1
-    for(let seqPosition = userInput; seqPosition <= 0; seqPosition++) {
+    for (let seqPosition = userInput; seqPosition <= 0; seqPosition++) {
+      //move to Utility functions[1]
       let seqStrArr = (seqPosition.toString()).split("");
       if (seqStrArr.includes("3")){
-        sequenceArr.push("Won't you be my neighbour?");
+        sequenceArr.push("str");
       } 
       else if (seqStrArr.includes("2")) {
-        sequenceArr.push("Boop");
+        sequenceArr.push("str");
       }
       else if (seqStrArr.includes("1")) {
-        sequenceArr.push("Beep");
+        sequenceArr.push("str");
       }
       else {
         sequenceArr.push(seqPosition);
       }
-//      let index = 0;
-      //this nested loop is supposed to check if each number contains one of the digits 3 2 or 1 and if so add string and then increment to the next number
-//      for(let seqStr = seqPosition.toString(); index < seqStr.length; index++) {
-        // if ((seqStr.split("")).includes("3")){
-        //   sequenceArr.push("str");
-        //   break;
-        // } else {
-        //   sequenceArr.push(seqPosition);
-        // }
+    }
+  }
+  else if (userInput >=0) {
+    for (let seqPosition = 0; seqPosition <= userInput; seqPosition++) {
+      //move to Utility functions[1]
+      let seqStrArr = (seqPosition.toString()).split("");
+      if (seqStrArr.includes("3")){
+        sequenceArr.push("str");
+      } 
+      else if (seqStrArr.includes("2")) {
+        sequenceArr.push("str");
       }
-      //meant to check if in the nested while loop you've found a target number and added a string "str"
-//      if (typeof (sequenceArr[sequenceArr.length-1]) === "string") {
-// //        continue;
-//       }
-//       sequenceArr.push(seqPosition);
-  //   }
-  // } else {
-  //   for(let seqPosition = 0; seqPosition <= userInput; seqPosition++) {
-  //     sequenceArr.push(seqPosition);
-  //   }
-  // }
+      else if (seqStrArr.includes("1")) {
+        sequenceArr.push("str");
+      }
+      else {
+        sequenceArr.push(seqPosition);
+      }
+    }
+  }
   return sequenceArr;
 }
-}
-//a function containing a for loop that will generate numbers from [0,n] (inclusive) where n is the user's input
-//each number will be passed to a utility function that checks if i (the most recent int in the current loop iteration) contains the desired digit
-//this function will be written once and passed to up to three times in an if-ie-else branching sequence starting it will check if 3 is in i, then 2, then 1
-//at each stage if the target digit is found the integer will be replaced with a specific phrase and returned. branching will then break
-//the integer (or phrase) will be pushed to an array
-//array will be passed to subsequent function
+
 
 //UI Logic
 //a function that will pull user input from a forn and insert it into a variable
